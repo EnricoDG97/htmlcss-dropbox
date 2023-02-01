@@ -317,18 +317,27 @@ header {
     display: flex;
     flex-direction: column;
     width: calc(100% / 3 - 10px);
-    padding: 2em 1em;
+    padding: 2em 0;
 }
 
 #fourth-section-container #fourth-section-inner .function img {
     width: 100%;
 }
 
+#fourth-section-container #fourth-section-inner .function > * {
+    padding-bottom: 1.5em;
+}
+
 /* FIFTH SECTION START HERE */
 
 #fifth-section-container {
-    /* test */
-    padding: 40px;
+    padding: 8em 0;
+}
+
+#fifth-section-container h2 {
+    font-size: 2em;
+    max-width: 60%;
+    padding-bottom: 1em;
 }
 
 /* SIXTH SECTION START HERE */
