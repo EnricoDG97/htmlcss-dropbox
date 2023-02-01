@@ -25,6 +25,10 @@ nav * a {
     padding: 12px 8px;
 }
 
+nav * a:hover {
+    border-bottom: 3px solid rgb(0, 97, 255);
+}
+
 #nav-left {
     display: flex;
     align-items: center;
@@ -64,6 +68,14 @@ nav * a {
     background-color: rgb(0, 97, 255);
     color: white;
     border: none;
+    cursor: pointer;
+}
+
+.blue-button:hover {
+    padding: 8px 12px;
+    background-color: transparent;
+    color: rgb(0, 97, 255);
+    border: 1px solid rgb(0, 97, 255);
     cursor: pointer;
 }
 
@@ -116,6 +128,11 @@ header {
  #header-text > .icon {
     font-size: 3em;
     padding-top: 1em;
+ }
+
+ #header-text > .icon a {
+    color: black;
+    text-decoration: none;
  }
 
 /* MAIN START HERE */
@@ -285,6 +302,16 @@ header {
     width: 100%;
 }
 
+#third-section-container #third-section-image img:hover {
+    transform: scale(80%);
+    filter: brightness(120%);
+    border-radius: 100%;
+    box-shadow: 0 30px 40px rgba(0,0,0,.1);
+    cursor: pointer;
+
+    transition: all 0.3s;
+}
+
 #third-section-container #third-section-text {
     padding: 2em;
     min-width: 40%;
@@ -298,6 +325,13 @@ header {
     padding: 12px 8px;
     border: 2px solid black;
     background-color: transparent;
+    cursor: pointer;
+}
+
+.white-button:hover {
+    padding: 12px 8px;
+    background-color: black;
+    color: white;
     cursor: pointer;
 }
 
@@ -325,6 +359,14 @@ header {
 
 #fourth-section-container #fourth-section-inner .function img {
     width: 100%;
+}
+
+#fourth-section-container #fourth-section-inner .function img:hover {
+    cursor: pointer;
+    transform: scale(90%);
+    filter: drop-shadow(0 0 0.75rem gray);
+
+    transition: all 0.3;
 }
 
 #fourth-section-container #fourth-section-inner .function > * {
@@ -389,6 +431,11 @@ header {
     height: 50%;
     width: 50%;
     position: relative;
+}
+
+.square-logo:hover {
+    border: 15px solid rgba(255,255,255,.5);
+    display: inline;
 }
 
 #col-left .square-logo img, #col-right .square-logo img {
@@ -470,6 +517,11 @@ header {
     cursor: pointer;
 }
 
+#seventh-inner-right button:hover {
+    background-color: black;
+    color: white;
+}
+
 /* EIGHTH SECTION START HERE */
 
 #eighth-section-container {
@@ -481,18 +533,53 @@ header {
     padding: 4em 0 2em 0;
 }
 
-
 #eighth-section-container .question {
     border-top: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
+    position: relative;
     padding: 25px 0;
 
     display: flex;
     justify-content: space-between;
 }
 
+
+
 #eighth-section-container .question .arrow-down {
     margin-right: 2em;
+    position: relative;
+}
+
+.question-detail {
+    display: none;
+    position: absolute;
+    top: 4em;
+    left: 0;
+    z-index: 1;
+    padding: 1em 0;
+}
+
+.question:hover {
+    margin-bottom: 6em;
+    transition: 0.5s;
+}
+
+.question:hover .question-detail {
+    display: block;
+    transition: all 0.5s;
+}
+
+.arrow-up {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.question:hover .arrow-down .arrow-up {
+    display: block;
+    background-color: white;
+    transition: all 0.5s;
 }
 
 /* FOOTER START HERE */
@@ -524,11 +611,16 @@ footer #footer-inner {
     padding: 4px 0;
 }
 
-.inner-link-list ul a{
+.inner-link-list ul a {
     text-decoration: none;
     color: white;
     cursor: pointer;
     padding: 2px 4px;
+}
+
+.inner-link-list ul a:hover {
+    text-decoration: underline;
+    color: white;
 }
 
 footer hr {
