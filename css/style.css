@@ -271,7 +271,7 @@ header {
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    padding: 20px 0;
+    padding: 5em 0;
 }
 
 #third-section-container #third-section-image {
@@ -300,7 +300,9 @@ header {
 
 /* FOURTH SECTION START HERE */
 
-#fourth-section-container {
+#fourth-section-container h2 {
+    font-size: 2em;
+    padding: 2em 0;
     text-align: center;
 }
 
@@ -315,8 +317,11 @@ header {
     display: flex;
     flex-direction: column;
     width: calc(100% / 3 - 10px);
-    /* test */
-    background-color: aqua;
+    padding: 2em 1em;
+}
+
+#fourth-section-container #fourth-section-inner .function img {
+    width: 100%;
 }
 
 /* FIFTH SECTION START HERE */
