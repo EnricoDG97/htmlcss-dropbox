@@ -508,9 +508,39 @@ footer {
 footer #footer-inner {
     display: flex;
     justify-content: space-between;
-
+    margin-bottom: 4em;
 }
 
 .inner-link-list ul {
     list-style-type: none;
+}
+
+.inner-link-list > strong {
+    margin: 1em 0;
+    display: block;
+}
+
+.inner-link-list ul li {
+    padding: 4px 0;
+}
+
+.inner-link-list ul a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 2px 4px;
+}
+
+footer hr {
+    border: 1px solid gray;
+    width: 10%;
+}
+
+footer #language {
+    padding: 2em 0;
+    display: flex;
+    gap: 1em;
+    color: gray;
+    align-items: center;
+    font-size: 0.8em;
 }
