@@ -95,6 +95,7 @@ header {
 
 /* MAIN START HERE */
 
+
 .centered {
     max-width: 900px;
     margin-left: auto;
@@ -104,11 +105,13 @@ header {
     background-color: bisque;
 }
 
-#main-container {
+/* FIRST SECTION */
+
+#first-section-container {
     padding-top: 100px;
 }
 
-#main-container h2 {
+#first-section-container h2 {
     /* test */
     padding: 30px;
 }
@@ -146,6 +149,31 @@ header {
 
 .plan .function-details .function-detail {
     display: flex;
+}
+
+/* SECOND SECTION */
+
+#second-section-container {
+    /* test */
+    border: solid 1px lightgray;
+    margin: 40px 0;
+
+
+}
+
+#second-section-header {
+    /* test */
+    border-bottom: 1px solid lightgray;
+}
+
+#second-section-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+#enterprise-presentation {
+    /* test */
+    flex-grow: 1;
 }
 
 
