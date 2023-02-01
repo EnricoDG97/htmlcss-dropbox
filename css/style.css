@@ -93,5 +93,60 @@ header {
     height: 350px;
 }
 
+/* MAIN START HERE */
+
+.centered {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* test */
+    background-color: bisque;
+}
+
+#main-container {
+    padding-top: 100px;
+}
+
+#main-container h2 {
+    /* test */
+    padding: 30px;
+}
+
+#choose-plan-container {
+    display: flex;
+    gap: 20px;
+    /* test */
+    padding: 30px;
+}
+
+#business-plans {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+
+}
+
+.plan {
+    width: calc(100% / 3);
+    /* test */
+    border: 1px solid lightgray;
+}
+
+.plan .plan-header {
+    /* test */
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.plan .function-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.plan .function-details .function-detail {
+    display: flex;
+}
+
 
 
