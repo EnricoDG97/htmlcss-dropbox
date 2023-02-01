@@ -176,5 +176,54 @@ header {
     flex-grow: 1;
 }
 
+/* THIRD SECTION START HERE */
+
+#third-section-container {
+    display: flex;
+    justify-content: space-between;
+    /* test */
+    height: 300px;
+}
+
+#third-section-container #third-section-image {
+    /* test */
+    flex-grow: 1;
+    background-color: chartreuse;
+
+}
+
+#third-section-container #third-section-text {
+    /* test */
+    min-width: 30%;
+    background-color: chocolate;
+}
+
+/* FOURTH SECTION START HERE */
+
+#fourth-section-container {
+    text-align: center;
+}
+
+#fourth-section-container #fourth-section-inner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#fourth-section-container #fourth-section-inner .function {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3 - 10px);
+    /* test */
+    background-color: aqua;
+}
+
+/* FIFTH SECTION START HERE */
+
+
+
+
+
 
 
