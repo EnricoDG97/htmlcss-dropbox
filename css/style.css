@@ -1,6 +1,6 @@
 body {
-    font-family: sans-serif;
-    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    /* position: relative; */
 }
 
 /* NAV START HERE*/
@@ -9,7 +9,7 @@ nav {
     position: fixed;
     width: 100%;
     background-color: white;
-    
+
     display: flex;
     justify-content: space-between;
     padding: 20px 20px 0 20px;
@@ -39,7 +39,7 @@ nav * a {
 }
 
 #nav-right li:last-child {
-    margin-top: -20px;
+    margin-top: -10px;
 }
 
 #nav-left ul, #nav-right ul {
@@ -54,61 +54,64 @@ nav * a {
     height: 100%;
 }
 
+/* BLUE BUTTON STYLE */
+
 .blue-button {
     padding: 8px 12px;
     background-color: rgb(0, 97, 255);
     color: white;
+    border: none;
 }
 
 /* HEADER START HERE */
 
 header {
     background-color: rgb(180, 208, 231);
-    padding-top: 50px;
+    padding-top: 6em;
+    margin-bottom: 100px;
 }
 
 #header-container {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-
-    /* test */
-    height: 400px;
 }
 
-#header-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* test */
-    background-color: aqua;
-    height: 100px;
-    width: auto;
+#header-title h1 {
+    font-weight: 800;
+    text-align: center;
+    font-size: 4em;
+    padding-bottom: 0.5em;
 }
 
 #header-inner {
     display: flex;
     justify-content: center;
-
-    /* test */
-    background-color: aquamarine;
+    height: 100%;
 }
 
 #header-inner #header-text {
-    /* test */
-    background-color: cornflowerblue;
-    height: 300px;
+    font-size: 0.8em;
     width: 30%;
 }
 
-#header-inner #header-image {
-    margin-bottom: -40px;
-    /* test */
-    background-color: rgb(59, 95, 161);
-    width: 70%;
-    height: 350px;
+#header-text > *:not(.icon){
+    padding-bottom: 3em;
 }
+
+#header-inner #header-image {
+    margin-bottom: -100px;
+    width: 70%;
+}
+#header-inner #header-image img {
+    width: 100%;
+    margin-top: -80px;
+}
+
+ #header-text > .icon {
+    font-size: 3em;
+    padding-top: 1em;
+ }
 
 /* MAIN START HERE */
 
