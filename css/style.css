@@ -262,5 +262,22 @@ header {
     border: 1px solid white;
 }
 
+/* SEVENTH SECTION START HERE */
 
+#seventh-section-container {
+    width: 100%;
+    background-color: rgb(180, 208, 231);
+    /* test */
+    height: 200px;
+    padding: 40px;
+}
 
+#seventh-section-container #seventh-section-inner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#seventh-section-container #seventh-section-inner #seventh-inner-left {
+    flex-grow: 1;
+}
