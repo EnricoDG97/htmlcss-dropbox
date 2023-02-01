@@ -269,7 +269,7 @@ header {
     background-color: rgb(180, 208, 231);
     /* test */
     height: 200px;
-    padding: 40px;
+    padding: 40px 0;
 }
 
 #seventh-section-container #seventh-section-inner {
@@ -280,4 +280,43 @@ header {
 
 #seventh-section-container #seventh-section-inner #seventh-inner-left {
     flex-grow: 1;
+}
+
+/* EIGHTH SECTION START HERE */
+
+#eighth-section-container {
+    text-align: center;
+
+}
+
+#eighth-section-container h3 {
+    /* test */
+    padding: 25px;
+}
+
+#eighth-section-container .question {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    /* test */
+    padding: 25px 0;
+}
+
+/* FOOTER START HERE */
+
+footer {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    color: white;
+    /* test */
+    padding: 40px 0;
+}
+
+footer #footer-inner {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.inner-link-list ul {
+    list-style-type: none;
 }
